@@ -1,4 +1,8 @@
 export const toDoItem = () => {
-  //   let
-  //   let title = document.createElement("h1");
+  let title;
+  let description;
+  let dueDate;
+  let priority;
+  let notes;
+  let checklist;
 };
