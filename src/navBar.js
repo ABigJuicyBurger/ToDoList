@@ -5,9 +5,9 @@ export const navBar = () => {
 
   navBar.classList.add("navbar");
   navBar.innerHTML = `
-    <a href="#">Index</a>
-    <a href="#">Today</a>
-    <a href="#">This week</a>
+    <button href="#">Index</buton>
+    <button href="#">Today</button>
+    <button href="#">This week</button>
   `;
 
   const projectsList = projectList();

@@ -13,5 +13,6 @@ export const projectList = () => {
   let sampleProject = document.createElement("ul");
   sampleProject.classList.add("sampleProject");
   projectsListOrganizer.appendChild(sampleProject);
+
   return projectsList;
 };

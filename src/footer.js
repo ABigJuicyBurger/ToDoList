@@ -5,7 +5,7 @@ export const footer = () => {
   const footerInfo = document.createElement("div");
   footerInfo.classList.add("footerInfo");
 
-  footer.textContent = "Copyright @ 2024 ABigJuicyBurger";
+  footerInfo.textContent = "Copyright @ 2024 ABigJuicyBurger";
 
   const githubLogo = document.createElement("img");
   githubLogo.src =
