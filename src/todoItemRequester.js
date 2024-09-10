@@ -11,6 +11,7 @@ export const TodoItemRequester = () => {
 
   let fieldset = document.createElement("fieldset");
   fieldset.classList.add("fieldset");
+  fieldset.style.width = "400px";
 
   let form = document.createElement("form");
   form.classList.add("form");
