@@ -4,7 +4,7 @@ export const navBar = () => {
   let navBar = document.querySelector("nav");
 
   navBar.classList.add("navbar");
-  navBar.textContent = `
+  navBar.innerHTML = `
     <a href="#">Index</a>
     <a href="#">Today</a>
     <a href="#">This week</a>

@@ -1,6 +1,10 @@
 export const footer = () => {
   const footer = document.querySelector("footer");
   footer.classList.add("footer");
+
+  const footerInfo = document.createElement("div");
+  footerInfo.classList.add("footerInfo");
+
   footer.textContent = "Copyright @ 2024 ABigJuicyBurger";
 
   const githubLogo = document.createElement("img");
@@ -9,5 +13,10 @@ export const footer = () => {
   githubLogo.alt = "GitHub Logo";
   githubLogo.width = 20;
   githubLogo.height = 20;
-  footer.appendChild(githubLogo);
+
+  footerInfo.appendChild(githubLogo);
+
+  footer.appendChild(footerInfo);
+
+  return footer;
 };
