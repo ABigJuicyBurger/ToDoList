@@ -4,12 +4,14 @@
 
 :root {
   font-size: 24px;
+  /* define css variable for header footer color */
+  --header-footer-color: rgba(0, 0, 0, 0.041);
 }
 
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .header,
@@ -21,14 +23,26 @@ body {
   height: 15vh;
   display: flex;
   color: black;
-  background-color: rgba(0, 0, 0, 0.041);
+  background-color: var(--header-footer-color);
+}
+
+.headerPic {
+  background: url(../src/img/checklistLogo.png) no-repeat;
+  background-color: var(--header-footer-color);
+  border: 1px solid var(--header-footer-color);
+  width: 2%;
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 1vw;
 }
 
 .headerInfo {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 2vw;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 3vw;
   flex-grow: 1;
 }
 
@@ -36,7 +50,8 @@ body {
   padding: 1vw;
   display: flex;
   flex-direction: column;
-  flex-basis: 25%;
+  flex: 0 0 25%;
+  min-width: 200px;
   height: auto;
   border: 1px solid red;
   overflow-y: auto;
@@ -63,7 +78,12 @@ body {
 #content {
   flex: 1;
   display: flex;
-  overflow: auto;
+  overflow: hidden;
+}
+
+#content > div:not(.navbar) {
+  flex: 1;
+  overflow-y: auto;
 }
 
 #content > div {
@@ -76,7 +96,7 @@ body {
   padding: 1vh;
   display: flex;
   color: black;
-  background-color: rgba(0, 0, 0, 0.041);
+  background-color: var(--header-footer-color);
   /* push footer to bottom of page */
   margin-top: auto;
 }

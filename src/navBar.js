@@ -5,7 +5,7 @@ export const navBar = () => {
 
   navBar.classList.add("navbar");
   navBar.innerHTML = `
-    <button href="#">Index</buton>
+    <button href="#">Inbox</buton>
     <button href="#">Today</button>
     <button href="#">This week</button>
   `;
