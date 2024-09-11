@@ -1,4 +1,4 @@
-export const TodoItemRequester = () => {
+export const todoItemRequester = () => {
   let itemProperties = 7;
   let propertyNames = [
     "title",

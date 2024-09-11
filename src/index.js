@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
   main();
   footer();
 });
-// document.body.appendChild(TodoItemRequester());
+
+// When user clicks on add task button in main, it will open a modal
+// to add task to main or projects
 
 // toDoItem();
